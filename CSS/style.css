@@ -1,0 +1,101 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabecalho {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 152px;
+}
+
+.logo-e-pesquisa {
+    width: 601px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 176px;
+    height: 50px;
+}
+
+#search {
+    width: 393px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 8px 16px 8px 16px;
+    background: #F5F5F5;
+}
+
+.login {
+    width: 535px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao-primario {
+    width: 130px;
+    height: 51px;
+    background-color: #2a7ae4;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.botao-secundario {
+    width: 182px;
+    height: 51px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #2a7ae4;
+    color: #2a7ae4;
+    font-size: 16px;
+    font-weight: 400;
+    ;
+}
+
+.banner {
+    background-image: url(/Logo-e-banner/banner-image.png);
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.conteudo-banner {
+    margin: 0px 152px 32px 152px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.desconto {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.produtos {
+    margin: 64px 152px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -5,28 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AluraGeek</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/flexbox.css">
 </head>
 
 <body>
 
     <header class="cabecalho">
-        <img src="/Logo e banner/Logo.png" alt="Logo da AluraGeek">
-        <input type="search" name="site-search" id="search" value="O que você deseja encontrar?">
-        <button type="button">Login</button>
+        <div class="logo-e-pesquisa">
+            <img class="logo" src="/Logo-e-banner/Logo.png" alt="Logo da AluraGeek">
+            <input type="search" name="site-search" id="search" value="O que você deseja encontrar?">
+        </div>
+        <div class="login">
+            <button class="botao-secundario" type="button">Login</button>
+        </div>
+
     </header>
     <main>
         <section class="banner">
-            <h1>Dezembro Promocional</h1>
-            <p>Produtos selecionados com 33% de desconto</p>
-            <button type="button">Ver consoles</button>
+            <div class="conteudo-banner">
+                <h1>Dezembro Promocional</h1>
+                <p class="desconto">Produtos selecionados com 33% de desconto</p>
+                <button class="botao-primario" type="button">Ver consoles</button>
+            </div>
         </section>
         <section class="produtos">
             <div class="starWars"></div>
             <h2>Star Wars</h2>
-            <ul class="item-produtos">
+            <ul class="item-produtos container">
                 <li>
                     <img src="/Images/stormMug.png"></img>
                     <p>Caneca Stormtrooper</p>
@@ -47,7 +55,7 @@
                 </li>
                 <li>
                     <img src="/Images/storm.png"></img>
-                    <p>CBoneco Stormtrooper</p>
+                    <p>Boneco Stormtrooper</p>
                     <p>R$ 60,00</p>
                     <a href="#">Ver produto</a>
                 </li>
@@ -63,18 +71,94 @@
                     <p>R$ 60,00</p>
                     <a href="#">Ver produto</a>
                 </li>
-
             </ul>
             <div class="consoles"></div>
             <h2>Consoles</h2>
-            <div class="diversos"></div>
-            <h2>Diversos</h2>
+            <ul class="item-produtos container">
+                <li>
+                    <img src="/Images/console1.png"></img>
+                    <p>Controle Xbox</p>
+                    <p>R$ 60,00</p>
+                    <a href="#">Ver produto</a>
+                </li>
+                <li>
+                    <img src="/Images/console2.png"></img>
+                    <p>Videogame</p>
+                    <p>R$ 60,00</p>
+                    <a href="#">Ver produto</a>
+                </li>
+                <li>
+                    <img src="/Images/console3.png"></img>
+                    <p>Nintendo</p>
+                    <p>R$ 60,00</p>
+                    <a href="#">Ver produto</a>
+                </li>
+                <li>
+                    <img src="/Images/console4.png"></img>
+                    <p>Controle</p>
+                    <p>R$ 60,00</p>
+                    <a href="#">Ver produto</a>
+                </li>
+                <li>
+                    <img src="/Images/console5.png"></img>
+                    <p>Videogame preto/p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                </li>
+                <li>
+                    <img src="/Images/console6.png"></img>
+                    <p>Minigame</p>
+                    <p>R$ 60,00</p>
+                    <a href="#">Ver produto</a>
+                </li>
+            </ul>
+            <div class="diversos">
+                <h2>Diversos</h2>
+                <ul class="item-produtos container">
+                    <li>
+                        <img src="/Images/atari.png"></img>
+                        <p>Camisa Atari</p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </li>
+                    <li>
+                        <img src="/Images/SNES.png"></img>
+                        <p>Camisa SNES</p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </li>
+                    <li>
+                        <img src="/Images/sonic.png"></img>
+                        <p>Boneco Sonic</p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </li>
+                    <li>
+                        <img src="/Images/diversos4.png"></img>
+                        <p>Relógio rosa</p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </li>
+                    <li>
+                        <img src="/Images/oculos.png"></img>
+                        <p>òculos realidade virtual</p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </li>
+                    <li>
+                        <img src="/Images/pikachu.png"></img>
+                        <p>Fantasia Pikachu</p>
+                        <p>R$ 60,00</p>
+                        <a href="#">Ver produto</a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="rodape">
-            <img src="/Logo e banner/Logo.png" alt="Logo da AluraGeek">
+            <img src="/Logo-e-banner/Logo.png" alt="Logo da AluraGeek">
             <ul class="lista-rodape">
                 <li>Quem somos nós</li>
                 <li>Política de privacidade</li>
@@ -86,10 +170,12 @@
             <h4>Fale conosco</h4>
             <input type="text" id="nome" class="input-padrao" value="nome" required>
             <textarea cols="70" rows="10" id="mensagem" value="Escreva sua mensagem" class="input-padrao" required></textarea>
-            <button type="button">Enviar mensagem</button>
+            <button class="botao-primario" type="button">Enviar mensagem</button>
         </div>
-        <p>Desenvolvido por Georgiane</p><br>
-        <p>2022</p>
+        <div class="autoria">
+            <p>Desenvolvido por Georgiane</p>
+            <p>2022</p>
+        </div>
 
 
     </footer>
