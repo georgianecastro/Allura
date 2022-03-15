@@ -27,6 +27,9 @@ body {
     border-radius: 20px;
     padding: 8px 16px 8px 16px;
     background: #F5F5F5;
+    border: none;
+    font-size: 14px;
+    color: #A2A2A2;
 }
 
 .login {
@@ -35,7 +38,7 @@ body {
     justify-content: flex-end;
 }
 
-.botao-primario {
+.botao-primario-principal {
     width: 130px;
     height: 51px;
     background-color: #2a7ae4;
@@ -97,5 +100,134 @@ h2 {
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px 40px 0px;
+}
+
+.titulo-produto {
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+    margin-top: 8px;
+}
+
+.preco-produto {
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.link-produto {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2A7AE4;
+}
+
+.starWars,
+.consoles,
+.diversos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-ver-tudo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2A7AE4;
+    background-color: #ffffff;
+    border: none;
+}
+
+.rodape {
+    background-color: #EAF2FD;
+    width: auto;
+    height: 368px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 64px 152px;
+}
+
+.autoria {
+    font-size: 16px;
+    color: #464646;
+    font-weight: 500;
+    margin: 32px 0px;
+    text-align: center;
+}
+
+.rodape-esquerda {
+    width: 50%;
+    display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 64px;
+}
+
+.lista-rodape {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #464646;
+    font-weight: 500;
+}
+
+.rodape-direita {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 64px;
+}
+
+#nome {
+    width: 560px;
+    height: 56px;
+    border-radius: 4px;
+    margin: 8px 0px;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A2A2A2;
+    text-align: left;
+    /*inserir código para o nome ficar no topo e verificar como manter a letra especificada*/
+    border: none;
+}
+
+#mensagem {
+    width: 560px;
+    height: 82px;
+    border-radius: 4px;
+    margin: 8px 0px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #A2A2A2;
+    text-align: left;
+    /*inserir código para o nome ficar no topo e verificar como manter a letra especificada*/
+    border: none;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.botao-primario-rodape {
+    width: 165px;
+    height: 51px;
+    background-color: #2a7ae4;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
 }
