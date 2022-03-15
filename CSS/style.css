@@ -3,11 +3,19 @@ body {
 }
 
 .cabecalho {
+    width: auto;
+    max-width: 1136px;
+    margin: auto;
     background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 32px 152px;
+    margin: 32px 15%;
 }
 
 .logo-e-pesquisa {
@@ -21,15 +29,21 @@ body {
     height: 50px;
 }
 
-#search {
+.search {
     width: 393px;
     height: 40px;
     border-radius: 20px;
     padding: 8px 16px 8px 16px;
-    background: #F5F5F5;
     border: none;
     font-size: 14px;
+    background-color: #F5F5F5;
     color: #A2A2A2;
+}
+
+.icon::placeholder {
+    padding-right: 16px;
+    background: url(/Images/lupa.png) no-repeat right;
+    background-size: 17px;
 }
 
 .login {
@@ -46,6 +60,7 @@ body {
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 32px;
 }
 
 .botao-secundario {
@@ -63,14 +78,22 @@ body {
 
 .banner {
     background-image: url(/Logo-e-banner/banner-image.png);
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    height: 352px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-banner {
+    width: 100%;
+    max-width: 1136px;
     height: 352px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-.conteudo-banner {
-    margin: 0px 152px 32px 152px;
+    margin: 0% 10%;
 }
 
 h1 {
@@ -88,7 +111,11 @@ h1 {
 }
 
 .produtos {
-    margin: 64px 152px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -100,7 +127,8 @@ h2 {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 16px;
     margin: 20px 0px 40px 0px;
 }
 
@@ -145,13 +173,15 @@ h2 {
     background-color: #EAF2FD;
     width: auto;
     height: 368px;
+    margin: auto;
 }
 
 .rodape-conteudo {
+    max-width: 1136px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 64px 152px;
+    margin: 64px auto;
 }
 
 .autoria {
