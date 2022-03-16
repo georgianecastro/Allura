@@ -1,17 +1,19 @@
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 .cabecalho {
     width: auto;
-    max-width: 1136px;
-    margin: auto;
+    margin: none;
     background: #ffffff;
     display: flex;
     justify-content: center;
 }
 
 .cabecalho-container {
+    width: 100%;
+    max-width: 1136px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +24,7 @@ body {
     width: 601px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -46,6 +49,10 @@ body {
     background-size: 17px;
 }
 
+.link-icon {
+    display: none;
+}
+
 .login {
     width: 535px;
     display: flex;
@@ -63,6 +70,10 @@ body {
     margin-bottom: 32px;
 }
 
+.botao-primario-principal:hover {
+    background: #5595E9;
+}
+
 .botao-secundario {
     width: 182px;
     height: 51px;
@@ -76,10 +87,13 @@ body {
     ;
 }
 
+.botao-secundario:hover {
+    background: #D4E4FA;
+}
+
 .banner {
     background-image: url(/Logo-e-banner/banner-image.png);
     background-size: cover;
-    margin: auto;
     width: 100%;
     height: 352px;
     display: flex;
@@ -89,51 +103,67 @@ body {
 .conteudo-banner {
     width: 100%;
     max-width: 1136px;
-    height: 352px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0% 10%;
+    margin: 2rem 2rem 1rem 2rem;
 }
 
-h1 {
-    font-size: 52px;
+.titulo-banner {
+    font-size: 3.3em;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 16px;
+    margin-bottom: 0.9rem;
 }
 
-.desconto {
-    font-size: 22px;
+.subtitulo-banner {
+    font-size: 1.4em;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 16px;
+    margin-bottom: 0.9rem;
 }
 
 .produtos {
-    margin: auto;
+    width: 100%;
+    max-width: 1136px;
     display: flex;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.tipo-produto {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
 h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: #464646;
 }
 
 .container {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 16px;
-    margin: 20px 0px 40px 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item-produto {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo-produto {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #464646;
     margin-top: 8px;
@@ -153,9 +183,7 @@ h2 {
     color: #2A7AE4;
 }
 
-.starWars,
-.consoles,
-.diversos {
+.cadastro-produtos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -267,7 +295,7 @@ textarea::placeholder {
     padding: 16px 0px 0px 12px;
 }
 
-h4 {
+legend {
     font-size: 16px;
     font-weight: 700;
     color: #464646;
