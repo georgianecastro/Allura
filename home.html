@@ -20,6 +20,7 @@
             </div>
             <div class="login">
                 <button class="botao-secundario" type="button">Login</button>
+                <span class="lupa"></span>
             </div>
         </div>
     </header>
@@ -178,8 +179,11 @@
                 </div>
                 <div class="rodape-direita">
                     <h4>Fale conosco</h4>
-                    <input type="text" id="nome" class="input-padrao" placeholder=" Nome" required>
-                    <textarea id="mensagem" placeholder=" Escreva sua mensagem" class="input-padrao" required></textarea>
+                    <div class="label-nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="nome">
+                    </div>
+                    <textarea class="mensagem" placeholder=" Escreva sua mensagem"></textarea>
                     <button class="botao-primario-rodape" type="button">Enviar mensagem</button>
                 </div>
             </div>
