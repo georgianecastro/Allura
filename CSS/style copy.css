@@ -1,0 +1,379 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.cabecalho {
+    width: auto;
+    max-width: 1136px;
+    margin: auto;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho-container {
+    width: 100%;
+    max-width: 1136px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 15%;
+}
+
+.logo-e-pesquisa {
+    width: 601px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 176px;
+    height: 50px;
+}
+
+.search {
+    width: 393px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 8px 16px 8px 16px;
+    border: none;
+    font-size: 14px;
+    background-color: #F5F5F5;
+    color: #A2A2A2;
+}
+
+.icon::placeholder {
+    padding-right: 16px;
+    background: url(/Images/lupa.png) no-repeat right;
+    background-size: 17px;
+}
+
+.link-icon {
+    display: none;
+}
+
+.login {
+    width: 535px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao-primario-principal {
+    width: 130px;
+    height: 51px;
+    background-color: #2a7ae4;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.botao-primario-principal:hover {
+    background: #5595E9;
+}
+
+.botao-secundario {
+    width: 182px;
+    height: 51px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #2a7ae4;
+    color: #2a7ae4;
+    font-size: 16px;
+    font-weight: 400;
+    ;
+}
+
+.botao-secundario:hover {
+    background-color: #D4E4FA;
+}
+
+.banner {
+    background-image: url(/Logo-e-banner/banner-image.png);
+    background-size: cover;
+    width: 100%;
+    height: 352px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-banner {
+    width: 100%;
+    max-width: 1136px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.titulo-banner {
+    font-size: 3.3em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.9rem;
+}
+
+.subtitulo-banner {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.9rem;
+}
+
+.produtos {
+    width: 100%;
+    max-width: 1136px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo-produto {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #464646;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item-produto {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-produto {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #464646;
+    margin-top: .5rem;
+}
+
+.preco-produto {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #464646;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.link-produto {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2A7AE4;
+}
+
+.cadastro-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-ver-tudo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2A7AE4;
+    background-color: #ffffff;
+    border: none;
+}
+
+.rodape {
+    background-color: #EAF2FD;
+    width: auto;
+    height: 368px;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape-conteudo {
+    width: 100%;
+    max-width: 1136px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.autoria {
+    font-size: 16px;
+    color: #464646;
+    font-weight: 500;
+    margin: 32px 0px;
+    text-align: center;
+}
+
+.rodape-esquerda {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.lista-rodape {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #464646;
+    font-weight: 500;
+}
+
+.rodape-direita {
+    width: 50%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 560px;
+}
+
+legend {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    box-sizing: content-box;
+    padding: 8px 12px 0px 12px;
+    border-radius: 4px;
+    color: #A2A2A2;
+    font-size: 0.75rem;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: none;
+}
+
+.label-nome input {
+    border: none;
+    display: block;
+    width: 100%;
+    outline: 0;
+    padding: 0.5rem 0rem 0.4rem 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 1px 1px #C8C8C8;
+    margin-bottom: .75rem;
+}
+
+.nome {
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #464646
+}
+
+.mensagem {
+    width: 100%;
+    height: 82px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: none;
+    padding: 1rem 0.5rem;
+    box-shadow: 0px 1px 1px #C8C8C8;
+    margin-bottom: .75rem;
+    box-sizing: border-box;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #A2A2A2;
+    text-align: left;
+    padding: 16px 0px 0px 12px;
+}
+
+.botao-primario-rodape {
+    width: 165px;
+    height: 51px;
+    background-color: #2a7ae4;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.botao-primario-rodape:hover {
+    background: #5595E9;
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        width: 100%;
+        max-width: 768px;
+        margin: none;
+    }
+    .cabecalho-container {
+        max-width: 768px;
+        width: 100%;
+        margin: 1rem 1.5rem;
+    }
+    .logo-e-pesquisa {
+        width: 404px;
+    }
+    .logo {
+        width: 100px;
+        height: 28px;
+    }
+    .search {
+        width: 272px;
+    }
+    .login {
+        width: auto;
+    }
+    .botao-secundario {
+        width: 166px;
+        height: 40px;
+        padding: .75rem;
+    }
+    .botao-secundario:hover {
+        background-color: #F5F5F5;
+    }
+    .banner {
+        background-image: url(/Logo-e-banner/banner.jpg);
+        background-size: cover;
+    }
+    .titulo-banner {
+        font-size: 3em;
+    }
+    .subtitulo-banner {
+        font-size: 1.2em;
+    }
+    .rodape-esquerda {
+        flex-direction: column;
+    }
+}
