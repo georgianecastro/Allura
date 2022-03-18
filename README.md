@@ -1,6 +1,6 @@
-# Allura
+# Alura
 
-Front-End Challenge Allura 2022
+Front-End Challenge Alura 2022
 
 Projeto desenvolvido para o 3º Chellenge de Front da Allura
 
