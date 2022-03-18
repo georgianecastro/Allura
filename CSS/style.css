@@ -48,7 +48,7 @@
         .icon::placeholder {
             display: none;
             padding-right: 16px;
-            background: url(/Images/lupa.png) no-repeat right;
+            background: url(./Images/lupa.png) no-repeat right;
             background-size: 17px;
         }
         
