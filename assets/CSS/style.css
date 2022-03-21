@@ -1,0 +1,175 @@
+        .botao-primario-principal {
+            width: 119px;
+            height: 40px;
+            background-color: #2a7ae4;
+            padding: 10px 16px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+        
+        .botao-primario-principal:hover {
+            background: #5595E9;
+        }
+        
+        .banner {
+            background-image: url("../Img/banner.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 192px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .conteudo-banner {
+            width: 100%;
+            max-width: 328px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: 0px 16px;
+        }
+        
+        .titulo-banner {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .subtitulo-banner {
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .produtos {
+            width: 100%;
+            max-width: 1136px;
+            margin: 0 auto;
+        }
+        
+        .tipo-produto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1.2rem 1rem;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #464646;
+        }
+        
+        .link-ver-tudo {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2A7AE4;
+            background-color: #ffffff;
+            border: none;
+        }
+        
+        .link-ver-tudo::after {
+            content: url("../Img/Vector.png")
+        }
+        
+        .container {
+            margin: 0px 16px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .item-produto {
+            width: 46%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .item-produto:nth-child(5) {
+            display: none;
+        }
+        
+        .item-produto:nth-child(6) {
+            display: none;
+        }
+        
+        .titulo-produto {
+            font-size: 14px;
+            font-weight: 500;
+            color: #464646;
+            margin-top: .5rem;
+        }
+        
+        .preco-produto {
+            font-size: 16px;
+            font-weight: 700;
+            color: #464646;
+            margin-top: .5rem;
+        }
+        
+        .link-produto {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2A7AE4;
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .banner {
+                background-image: url("../Img/banner-tablet.png");
+                background-size: cover;
+                height: 352px;
+                justify-content: flex-start;
+            }
+            .conteudo-banner {
+                max-width: 768px;
+            }
+            .titulo-banner {
+                font-size: 52px;
+            }
+            .subtitulo-banner {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            .item-produto {
+                width: 23%;
+            }
+            .link-produto {
+                font-size: 16px;
+            }
+        }
+        
+        @media screen and (min-width: 1136px) {
+            .botao-primario-principal {
+                width: 130px;
+                height: 51px;
+            }
+            .banner {
+                background-image: url("../Img/banner-image.png");
+                justify-content: center;
+            }
+            .conteudo-banner {
+                max-width: 1136px;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            .link-ver-tudo {
+                font-size: 16px;
+            }
+            .item-produto {
+                width: 15%;
+            }
+            .item-produto:nth-child(5) {
+                display: flex;
+            }
+            .item-produto:nth-child(6) {
+                display: flex;
+            }
+        }
