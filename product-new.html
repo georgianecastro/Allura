@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/base.css">
     <link rel="stylesheet" href="./assets/CSS/header.css">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/product-new.css">
     <link rel="stylesheet" href="./assets/CSS/footer.css">
 </head>
 
@@ -21,8 +21,8 @@
             <div class="barra-pesquisa">
                 <input type="search" class="search icon" placeholder="O que você deseja encontrar?">
             </div>
-            <div class="botao-login">
-                <button class="botao-secundario" type="button">Login</button>
+            <div class="botao-administrador">
+                <button class="botao-secundario-cabecalho" type="button">Menu Administrador</button>
             </div>
             <div class="icone-lupa">
                 <a href="#" class="link-icon"><img src="./assets/Img/lupa.png" class="icon" alt="Lupa para pesquisa"></a>
@@ -31,7 +31,38 @@
         </div>
     </header>
     <main>
-        <section>login</section>
+        <section class="new-product">
+            <div class="new-product-container">
+                <h2 class="new-product-title">Adicionar novo produto</h2>
+                <div class="img-produto-mobile add-img-produto">
+                    <p class="add-img">Adicionar uma imagem para o produto</p>
+                </div>
+                <div class="img-produto-tablet">
+                    <div class="add-img-produto">
+                        <p class="add-img">Arraste para adicionar uma <br> imagem para o produto</p>
+                    </div>
+                    <p>Ou</p>
+                    <button class="botao-secundario-produto" type="button">Procure no seu Tablet</button>
+                </div>
+                <div class="img-produto-pc">
+                    <div class="add-img-produto">
+                        <p class="add-img">Arraste para adicionar uma <br> imagem para o produto</p>
+                    </div>
+                    <p>Ou</p>
+                    <button class="botao-secundario-produto" type="button">Procure no seu Computador</button>
+                </div>
+                <div class="label-produto ">
+                    <label for="nome ">Nome do produto</label>
+                    <input type="text " class="lable-title  " name="nome ">
+                </div>
+                <div class="label-produto ">
+                    <label for="nome ">Preço do produto</label>
+                    <input type="number " class="lable-title " name="Preço">
+                </div>
+                <textarea name="description " class="lable-description " placeholder=" Descrição do produto"></textarea>
+                <button class="botao-primario-produto " type="button ">Adicionar produto</button>
+            </div>
+        </section>
     </main>
 
     <footer>
