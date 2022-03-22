@@ -130,9 +130,6 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-    .rodape {
-        margin-top: 20px;
-    }
     .rodape-conteudo {
         flex-direction: row;
         justify-content: space-between;
